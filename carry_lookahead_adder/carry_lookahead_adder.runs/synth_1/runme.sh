@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.runs/synth_1'
+HD_PWD='/home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

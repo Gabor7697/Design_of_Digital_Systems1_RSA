@@ -17,21 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.cache/wt} [current_project]
-set_property parent.project_path {/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.xpr} [current_project]
+set_property webtalk.parent_dir /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.cache/wt [current_project]
+set_property parent.project_path /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo {/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.cache/ip} [current_project]
+set_property ip_output_repo /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.srcs/sources_1/new/4bit_CLA.vhd}
-  {/home/gabor7669/Desktop/DoDS project/carry_lookahead_adder/carry_lookahead_adder.srcs/sources_1/new/CLA.vhd}
+  /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.srcs/sources_1/new/4bit_CLA.vhd
+  /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_adder/carry_lookahead_adder.srcs/sources_1/new/CLA.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
