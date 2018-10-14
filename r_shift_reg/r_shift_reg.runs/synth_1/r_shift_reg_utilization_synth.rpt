@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sun Oct 14 13:06:44 2018
+| Date         : Sun Oct 14 14:25:06 2018
 | Host         : gabor7669 running 64-bit Linux Mint 18.2 Sonya
 | Command      : report_utilization -file r_shift_reg_utilization_synth.rpt -pb r_shift_reg_utilization_synth.pb
 | Design       : r_shift_reg
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |    0 |     0 |     53200 |  0.00 |
-|   LUT as Logic          |    0 |     0 |     53200 |  0.00 |
+| Slice LUTs*             |    1 |     0 |     53200 | <0.01 |
+|   LUT as Logic          |    1 |     0 |     53200 | <0.01 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |  257 |     0 |    106400 |  0.24 |
-|   Register as Flip Flop |  257 |     0 |    106400 |  0.24 |
+| Slice Registers         |  258 |     0 |    106400 |  0.24 |
+|   Register as Flip Flop |  258 |     0 |    106400 |  0.24 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 257   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 1     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |  516 |     0 |       200 | 258.00 |
+| Bonded IOB                  |  517 |     0 |       200 | 258.50 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |   0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -147,8 +147,10 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |  259 |                  IO |
-| OBUF     |  257 |                  IO |
+| OBUF     |  258 |                  IO |
 | FDCE     |  257 |        Flop & Latch |
+| LUT1     |    1 |                 LUT |
+| FDRE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
