@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity CLA is
-    generic(word_length: natural := 32
+    generic(word_length: natural := 256
             );
             
     Port ( a : in STD_LOGIC_VECTOR (word_length -1  downto 0);
