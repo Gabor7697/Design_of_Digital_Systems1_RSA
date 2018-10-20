@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Oct 14 15:00:04 2018
-# Process ID: 11891
+# Start of session at: Sat Oct 20 18:26:11 2018
+# Process ID: 10819
 # Current directory: /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.runs/synth_1
 # Command line: vivado -log CLA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLA.tcl
 # Log file: /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.runs/synth_1/CLA.vds
