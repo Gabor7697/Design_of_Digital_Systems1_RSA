@@ -1,0 +1,7 @@
+Running: xsim.dir/FM_Mod_Mult_tb_behav/xsimk -simmode gui -wdb FM_Mod_Mult_tb_behav.wdb -simrunnum 0 -socket 51387
+Design successfully loaded
+Design Loading Memory Usage: 42448 KB (Peak: 42448 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 132384 KB (Peak: 189720 KB)
+Simulation CPU Usage: 20 ms

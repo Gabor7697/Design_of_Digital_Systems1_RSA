@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sat Oct 20 18:27:00 2018
+| Date         : Sun Oct 21 11:09:54 2018
 | Host         : gabor7669 running 64-bit Linux Mint 18.2 Sonya
-| Command      : report_utilization -file CLA_utilization_synth.rpt -pb CLA_utilization_synth.pb
-| Design       : CLA
+| Command      : report_utilization -file CLS_utilization_synth.rpt -pb CLS_utilization_synth.pb
+| Design       : CLS
 | Device       : 7z020clg484-1
 | Design State : Synthesized
 -------------------------------------------------------------------------------------------------

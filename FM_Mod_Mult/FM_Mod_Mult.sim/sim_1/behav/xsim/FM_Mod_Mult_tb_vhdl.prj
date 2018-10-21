@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.srcs/sources_1/new/4bit_CLA.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/CLA_258/CLA_258.srcs/sources_1/new/CLA_258.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/CLA_258/CLA_258.srcs/sources_1/new/CLA_258_top.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/new/CLS.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/carry_save_adder/carry_save_adder.srcs/sources_1/new/CSA.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/new/FM_Mod_Mult.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/LUT/LUT.srcs/sources_1/new/LUT.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/mod_mult_loop_cont/mod_mult_loop_cont.srcs/sources_1/new/mod_mult.vhd" \
+"../../../../FM_Mod_Mult.srcs/sources_1/imports/Design_of_Digital_Systems1_RSA/r_shift_reg/r_shift_reg.srcs/sources_1/new/r_shift_reg.vhd" \
+"../../../../FM_Mod_Mult.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort

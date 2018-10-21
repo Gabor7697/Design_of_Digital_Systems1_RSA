@@ -31,7 +31,7 @@ set_property ip_output_repo /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Syst
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.srcs/sources_1/new/4bit_CLA.vhd
-  /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.srcs/sources_1/new/CLA.vhd
+  /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/carry_lookahead_sub/carry_lookahead_adder.srcs/sources_1/new/CLS.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,12 +44,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top CLA -part xc7z020clg484-1
+synth_design -top CLS -part xc7z020clg484-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef CLA.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file CLA_utilization_synth.rpt -pb CLA_utilization_synth.pb"
+write_checkpoint -force -noxdef CLS.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file CLS_utilization_synth.rpt -pb CLS_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
