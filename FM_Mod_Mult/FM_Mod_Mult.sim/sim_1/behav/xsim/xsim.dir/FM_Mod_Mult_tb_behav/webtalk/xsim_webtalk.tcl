@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Oct 21 15:52:44 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Oct 21 20:10:54 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,19 +14,19 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "e83a9ad2-1392-4bf6-9ecc-69cc46f88241" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "3ffa70c73114415e92c2fbf0decbb39f" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "13" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "17" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "LinuxMint" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Linux Mint 18.2 Sonya" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "3074.682 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3076.428 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "5 ns" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.02_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "3" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Memory -value "132384_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1483819409 -regid "211269741_1777538117_210690386_129" -xml /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 577252588 -regid "211269741_1777538117_210690386_129" -xml /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/FM_Mod_Mult/FM_Mod_Mult.sim/sim_1/behav/xsim/xsim.dir/FM_Mod_Mult_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

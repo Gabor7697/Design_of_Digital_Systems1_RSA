@@ -82,17 +82,18 @@ dv <= '0';
             nx_state <= idle;
         end if;
     when add =>
-        xi <= X(i);
+       
         wr_en <= '1';
         i <= i_reg + 1;
-        if(i >= N) then
-            nx_state <= finish;
+        if(i >= N) then 
+         nx_state <= finish;
         elsif (i < N) then
+            xi <= X(i);
             nx_state <= add;
         else 
             nx_state <= idle;
         end if;
-   when finish => 
+   when finish =>
     wr_en <= '0';
     i <= 0;
     dv <= '1';

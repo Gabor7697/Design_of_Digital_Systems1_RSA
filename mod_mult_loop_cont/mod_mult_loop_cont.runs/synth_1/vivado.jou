@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Oct 20 22:26:38 2018
-# Process ID: 18620
+# Start of session at: Sun Oct 21 19:44:40 2018
+# Process ID: 17036
 # Current directory: /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/mod_mult_loop_cont/mod_mult_loop_cont.runs/synth_1
 # Command line: vivado -log mod_mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mod_mult.tcl
 # Log file: /home/gabor7669/Desktop/DoDS1/Design_of_Digital_Systems1_RSA/mod_mult_loop_cont/mod_mult_loop_cont.runs/synth_1/mod_mult.vds

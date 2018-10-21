@@ -180,7 +180,7 @@ s_result <= s_CLS_res(word_length -1 downto 0) when ((s_dv = '1') and (s_CLA_res
             (others => '0');
           
  s_ready <= '1' when (s_result > zero) else
-          '0';          
+            '0';          
 result <= s_result; 
 ready <= s_ready;   
 end Behavioral;
