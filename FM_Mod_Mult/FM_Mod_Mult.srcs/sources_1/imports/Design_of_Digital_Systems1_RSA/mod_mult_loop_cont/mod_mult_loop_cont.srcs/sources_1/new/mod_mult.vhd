@@ -48,7 +48,7 @@ architecture Behavioral of mod_mult is
 type state is (idle, add, finish);
 signal pr_state, nx_state : state;
 
-signal i, i_reg : natural range 0 to N;
+signal i, i_reg : natural range 0 to N-1;
 begin
 process(clk,rst)
 begin

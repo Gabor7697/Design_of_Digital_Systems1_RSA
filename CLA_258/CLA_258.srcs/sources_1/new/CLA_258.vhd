@@ -11,17 +11,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity CLA_258 is
-    Port ( a : in STD_LOGIC_VECTOR (5 downto 0);
-           b: in STD_LOGIC_VECTOR (5 downto 0);
+    Port ( a : in STD_LOGIC_VECTOR (3 downto 0);
+           b: in STD_LOGIC_VECTOR (3 downto 0);
            cin: in std_logic;
-           sum : out STD_LOGIC_VECTOR (5 downto 0);
+           sum : out STD_LOGIC_VECTOR (3 downto 0);
           cout : out STD_LOGIC
            );
 end CLA_258;
 
 architecture behavioral of CLA_258 is
-    signal G, P: std_logic_vector(5 downto 0);
-    signal c : std_logic_vector(5 downto 0);
+    signal G, P: std_logic_vector(3 downto 0);
+    signal c : std_logic_vector(3 downto 0);
 begin
     G <= a AND b;
     P <= a XOR b;
@@ -36,26 +36,13 @@ begin
             (P(2) AND G(1)) OR
             (P(2) AND P(1) AND G(0)) OR
             (P(2) AND  P(1) AND P(0) AND cin);
-    c(4) <= G(3) OR 
+    cout <= G(3) OR 
             (P(3) AND G(2)) OR 
             (P(3) AND P(2) AND G(1)) OR
             (P(3) AND P(2) AND P(1) AND G(0)) OR 
             (P(3) AND P(2) AND P(1) AND P(0) AND cin);
             
-    c(5) <= G(4) OR 
-           (P(4) AND G(3)) OR 
-           (P(4) AND P(3) AND G(2)) OR
-           (P(4) AND P(3) AND P(2) AND G(1)) OR 
-           (P(4) AND P(3) AND P(2) AND P(1) AND G(0)) OR
-           (P(4) AND P(3) AND P(2) AND P(1) AND P(0) AND cin);
-     
-    cout <= G(5) OR 
-            (P(5) AND G(4)) OR 
-            (P(5) AND P(4) AND G(3)) OR
-            (P(5) AND P(4) AND P(3) AND G(2)) OR 
-            (P(5) AND P(4) AND P(3) AND P(2) AND G(1)) OR
-            (P(5) AND P(4) AND P(3) AND P(2) AND P(1) AND G(0)) or
-            (P(5) AND P(4) AND P(3) AND P(2) AND P(1) AND P(0) AND cin);      
+    
     sum <= P XOR c;
      
 

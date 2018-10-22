@@ -61,7 +61,7 @@ component mod_mult
 end component;
 
 component CLA
-    generic(word_length: natural := word_length + 2
+    generic(word_length: natural := word_length + 4
             );
             
     Port ( a : in STD_LOGIC_VECTOR (word_length -1  downto 0);
@@ -75,7 +75,7 @@ component CLA
 end component;
 
 component CLS 
-    generic(word_length: natural := word_length + 2
+    generic(word_length: natural := word_length + 4
             );
             
     Port ( a : in STD_LOGIC_VECTOR (word_length -1  downto 0);
@@ -91,15 +91,16 @@ end component;
 signal s_xi, s_s0, s_c0, s_wr_e, s_dv, s_ready : std_logic;
 signal s_LUTres : std_logic_vector(word_length downto 0);
 signal s_c_out,s_sum_out : std_logic_vector(word_length downto 0);
-signal s_CSA_Cout, s_CSA_Sout , s_CLA_res, s_CLS_res: std_logic_vector(word_length +1 downto 0);
-signal s_cout , s_sum, s_N : std_logic_vector(word_length+1 downto 0);
+signal s_CSA_Cout, s_CSA_Sout : std_logic_vector(word_length +1 downto 0);
+signal s_CLA_res, s_CLS_res  : std_logic_vector(word_length +3 downto 0);
+signal s_cout , s_sum, s_N : std_logic_vector(word_length+3 downto 0);
 signal s_result, zero: std_logic_vector(word_length -1 downto 0);
 
 -----------------Architecture Body-----------------------------------------------------------------
 begin 
-s_cout <= '0' & s_c_out;
-s_sum <= '0' & s_sum_out;
-s_N <= "00" & N_i;
+s_cout <= "000" & s_c_out;
+s_sum <= "000" & s_sum_out;
+s_N <= "0000" & N_i;
 zero <= (others => '0');
 ---------------------Port declarations-------------------------------------------------------------
 LUT1: LUT
@@ -159,7 +160,7 @@ C_SHREG : r_shift_reg
         dv => s_dv
         );  
    CLA1 : CLA 
-    generic map(word_length => word_length +2)
+    generic map(word_length => word_length +4)
     port map (
         a =>  s_sum,
         b =>  s_cout,
@@ -167,7 +168,7 @@ C_SHREG : r_shift_reg
         result => s_CLA_res
         );
      CLS1 : CLS 
-            generic map(word_length => word_length +2)
+            generic map(word_length => word_length +4)
             port map (
                 a =>  s_CLA_res,
                 b =>   s_N,
