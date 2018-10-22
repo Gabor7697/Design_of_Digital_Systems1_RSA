@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CLA_258.srcs/sources_1/new/CLA_258.vhd" \
+"../../../../CLA_258.srcs/sources_1/new/CLA_258_top.vhd" \
+"../../../../CLA_258.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort

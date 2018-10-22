@@ -7,8 +7,8 @@ end;
 
 architecture bench of CLA_tb is
 
-  component CLA
-      generic(word_length: natural := 32
+  component CLS
+      generic(word_length: natural := 18
               );
       Port ( a : in STD_LOGIC_VECTOR (word_length -1  downto 0);
              b : in STD_LOGIC_VECTOR (word_length -1   downto 0);
@@ -17,15 +17,15 @@ architecture bench of CLA_tb is
              );
   end component;
 
-  signal a: STD_LOGIC_VECTOR (32-1 downto 0);
-  signal b: STD_LOGIC_VECTOR (32-1 downto 0);
+  signal a: STD_LOGIC_VECTOR (18-1 downto 0);
+  signal b: STD_LOGIC_VECTOR (18-1 downto 0);
   signal cin: STD_LOGIC;
-  signal result: std_logic_vector(32 -1 downto 0) ;
+  signal result: std_logic_vector(18 -1 downto 0) ;
 
 begin
 
   -- Insert values for generic parameters !!
-  uut: CLA generic map ( word_length => 32 )
+  uut: CLS generic map ( word_length => 18 )
               port map ( a           => a,
                          b           => b,
                          cin         => cin,
@@ -34,8 +34,8 @@ begin
   stimulus: process
   begin
   
-   a <= "11111111111111111111111111111111";
-   b <= "00000000000000001111111111111111";
+   a <= "011001010100000110";
+   b <= "001011100111001011";
  cin <= '1';
     wait;
   end process;

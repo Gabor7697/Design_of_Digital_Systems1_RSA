@@ -12,6 +12,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.four_bit_CLA [four_bit_cla_default]
-Compiling architecture behavioral of entity xil_defaultlib.CLA [cla_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLS [\CLS(word_length=18)\]
 Compiling architecture bench of entity xil_defaultlib.cla_tb
 Built simulation snapshot CLA_tb_behav

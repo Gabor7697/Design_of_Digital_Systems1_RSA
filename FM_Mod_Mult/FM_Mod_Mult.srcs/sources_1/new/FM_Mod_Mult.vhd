@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity FM_Mod_Mult is
     generic( word_length : natural := 16);
-    Port ( N : in STD_LOGIC_VECTOR (word_length -1  downto 0);
+    Port ( N_i : in STD_LOGIC_VECTOR (word_length -1  downto 0);
            X : in STD_LOGIC_VECTOR (word_length -1  downto 0);
            Y : in STD_LOGIC_VECTOR (word_length -1  downto 0);
            NY : in STD_LOGIC_VECTOR (word_length   downto 0);
@@ -99,7 +99,7 @@ signal s_result, zero: std_logic_vector(word_length -1 downto 0);
 begin 
 s_cout <= '0' & s_c_out;
 s_sum <= '0' & s_sum_out;
-s_N <= "00" & N;
+s_N <= "00" & N_i;
 zero <= (others => '0');
 ---------------------Port declarations-------------------------------------------------------------
 LUT1: LUT
@@ -110,7 +110,7 @@ LUT1: LUT
         c_0 => s_c0,
         s_0 => s_s0,
         MY => NY,
-        M =>  N,
+        M =>  N_i,
         Y =>  Y,
        result => s_LUTres
        );

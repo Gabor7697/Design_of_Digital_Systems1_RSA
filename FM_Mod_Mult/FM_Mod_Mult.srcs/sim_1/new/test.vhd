@@ -10,7 +10,7 @@ architecture bench of FM_Mod_Mult_tb is
 
   component FM_Mod_Mult
       generic( word_length : natural := 16);
-      Port ( N : in STD_LOGIC_VECTOR (word_length -1  downto 0);
+      Port ( N_i : in STD_LOGIC_VECTOR (word_length -1  downto 0);
              X : in STD_LOGIC_VECTOR (word_length -1  downto 0);
              Y : in STD_LOGIC_VECTOR (word_length -1  downto 0);
              NY : in STD_LOGIC_VECTOR (word_length   downto 0);
@@ -21,7 +21,7 @@ architecture bench of FM_Mod_Mult_tb is
              rst : in STD_LOGIC);
   end component;
 
-  signal N: STD_LOGIC_VECTOR (16 -1 downto 0);
+  signal N_i: STD_LOGIC_VECTOR (16 -1 downto 0);
   signal X: STD_LOGIC_VECTOR (16-1 downto 0);
   signal Y: STD_LOGIC_VECTOR (16 -1 downto 0);
   signal NY: STD_LOGIC_VECTOR (16 downto 0);
@@ -38,7 +38,7 @@ begin
 
   -- Insert values for generic parameters !!
   uut: FM_Mod_Mult generic map ( word_length => 16 )
-                      port map ( N           => N,
+                      port map ( N_i           => N_i,
                                  X           => X,
                                  Y           => Y,
                                  NY          => NY,
@@ -50,12 +50,14 @@ begin
 
   stimulus: process
   begin
-  
-    X <= "0011101110010110";
-    Y <= "0011101110010110";
+   rst <= '1';
+   wait for 5 ns;
+   rst <= '0';
+    X <=   "1011100111001011";
+    Y <=   "1011010100000001";
     
-    N <= "0010011100101001";
-    NY <= "00110001010111011";
+    N_i <= "1110000000000101";
+    NY <= "11001010100000110";
     rst <= '0';
     enable <= '1';
     wait for 50 ms;
